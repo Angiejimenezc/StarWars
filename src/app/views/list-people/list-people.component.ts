@@ -11,6 +11,7 @@ export class ListPeopleComponent implements OnInit {
   public starpeople: any = [];
   public person: any = [];
   public names: Array<string>;
+  //icons
 
   constructor(private _service: StarPeopleService) {
     // this.title = 'Personajes';

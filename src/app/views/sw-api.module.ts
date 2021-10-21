@@ -8,9 +8,18 @@ import { StarShipComponent } from './star-ship/star-ship.component';
 import { FilmsComponent } from './films/films.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [ListPeopleComponent, ListStarshipsComponent, HomeComponent, StarShipComponent, FilmsComponent, PlanetsComponent, VehiclesComponent],
-  imports: [CommonModule, SwapiRoutingModule],
+  declarations: [
+    ListPeopleComponent,
+    ListStarshipsComponent,
+    HomeComponent,
+    StarShipComponent,
+    FilmsComponent,
+    PlanetsComponent,
+    VehiclesComponent,
+  ],
+  imports: [CommonModule, SwapiRoutingModule, FontAwesomeModule],
 })
 export class SwApiModule {}
