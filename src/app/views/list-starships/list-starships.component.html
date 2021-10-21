@@ -1,24 +1,26 @@
-<h2>Starships</h2>
-<table class="table">
-  <thead class="table__head">
-    <tr>
-      <th>Name</th>
-      <th>Model</th>
-      <th>Manufacturer</th>
-      <th>passengers</th>
-      <th>crew</th>
-      <th>consumables</th>
-      <th>Go StarShip</th>
-    </tr>
-  </thead>
-  <tbody class="table__body">
-    <tr *ngFor="let star of starship">
-      <td>{{ star.name }}</td>
-      <td>{{ star.model }}</td>
-      <td>{{ star.manufacturer }}</td>
-      <td>{{ star.crew }}</td>
-      <td>{{ star.length }}</td>
-      <td>{{ star.consumables }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container mb-5 p-5">
+  <h2 class="text-warning">Starships</h2>
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th>Name</th>
+        <th>Model</th>
+        <th>Manufacturer</th>
+        <th>passengers</th>
+        <th>crew</th>
+        <th>consumables</th>
+        <th>Go StarShip</th>
+      </tr>
+    </thead>
+    <tbody class="table__body">
+      <tr *ngFor="let star of starship">
+        <td>{{ star.name }}</td>
+        <td>{{ star.model }}</td>
+        <td>{{ star.manufacturer }}</td>
+        <td>{{ star.crew }}</td>
+        <td>{{ star.length }}</td>
+        <td>{{ star.consumables }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
