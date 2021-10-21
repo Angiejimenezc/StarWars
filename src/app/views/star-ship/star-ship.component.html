@@ -2,19 +2,31 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th scope="col">Type</th>
-        <th scope="col">Column heading</th>
-        <th scope="col">Column heading</th>
-        <th scope="col">Column heading</th>
+        <th scope="col">Name</th>
+        <th scope="col">Model</th>
+        <th scope="col">Manufacturer</th>
+        <th scope="col">Passengers</th>
+        <th scope="col">Crew</th>
+        <th scope="col">Consumables</th>
+        <th scope="col"></th>
       </tr>
     </thead>
-    <tbody>
-      <tr class="table-Light">
-        <th scope="row"></th>
-        <td>Column content</td>
-        <td>Column content</td>
-        <td>Column content</td>
+    <tbody class="table-light text-warning">
+      <tr *ngFor="let ship of ships">
+        <td>Death Star</td>
+        <td>DS-1 Orbital Battle</td>
+        <td>Imperial Department of Military Research, Sienar Fleet Systems</td>
+        <td>843,342</td>
+        <td>342,953</td>
+        <td>3 years</td>
       </tr>
+      <button
+        class="btn btn-link disabled me-2"
+        type="button"
+        routerLink="/views/list-starship"
+      >
+        Return to ships
+      </button>
     </tbody>
   </table>
 </div>
