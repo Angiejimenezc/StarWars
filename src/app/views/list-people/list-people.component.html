@@ -1,23 +1,25 @@
-<h2>People</h2>
-<table class="table">
-  <thead class="table__head">
-    <tr>
-      <th>Name</th>
-      <th>birth_year</th>
-      <th>mass</th>
-      <th>hair_color</th>
-      <th>skin_color</th>
-      <th>gender</th>
-    </tr>
-  </thead>
-  <tbody class="table__body">
-    <tr *ngFor="let person of starpeople">
-      <td>{{ person.name }}</td>
-      <td>{{ person.birth_year }}</td>
-      <td>{{ person.mass }}</td>
-      <td>{{ person.hair_color }}</td>
-      <td>{{ person.skin_color }}</td>
-      <td>{{ person.gender }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container mb-5 p-5">
+  <h2 class="text-warning">People</h2>
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th>Name</th>
+        <th>birth_year</th>
+        <th>mass</th>
+        <th>hair_color</th>
+        <th>skin_color</th>
+        <th>gender</th>
+      </tr>
+    </thead>
+    <tbody class="table__body text-warning">
+      <tr *ngFor="let person of starpeople">
+        <td>{{ person.name }}</td>
+        <td>{{ person.birth_year }}</td>
+        <td>{{ person.mass }}</td>
+        <td>{{ person.hair_color }}</td>
+        <td>{{ person.skin_color }}</td>
+        <td>{{ person.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

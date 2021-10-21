@@ -19,7 +19,7 @@ const routes: Routes = [
       },
       { path: 'list_people', component: ListPeopleComponent },
       {
-        path: 'starship',
+        path: 'star-ship',
         component: StarShipComponent,
       },
       {
