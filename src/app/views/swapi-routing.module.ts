@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListStarshipsComponent } from './list-starships/list-starships.component';
 import { ListPeopleComponent } from './list-people/list-people.component';
+import { StarShipComponent } from './star-ship/star-ship.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
       },
       { path: 'list_people', component: ListPeopleComponent },
       {
-        path: '',
+        path: 'starship',
+        component: StarShipComponent,
       },
       {
         path: '**',

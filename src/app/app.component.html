@@ -1,2 +1,77 @@
-<h1>Hola Mundo</h1>
+<div class="row container mt-4">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">StarWars</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="views/list_starships"
+              >StarShips</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="views/list_people"
+              >People</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="peliculas"
+              >Films</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="Vehiculos"
+              >Vehicles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Planets</a>
+          </li>
+        </ul>
+
+        <nav class="navbar navbar-light bg-light">
+          <form class="container-fluid justify-content-start">
+            <button
+              class="btn btn-outline-success me-2"
+              type="button"
+              routerLink="/auth/login"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-outline-success me-2"
+              type="button"
+              routerLink="/auth/register"
+            >
+              SigUp
+            </button>
+          </form>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</div>
 <router-outlet></router-outlet>
