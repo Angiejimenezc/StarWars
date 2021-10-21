@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Starship } from 'src/app/models/starship';
 import { StarShipService } from 'src/app/services/star-ship.service';
 
@@ -12,7 +13,7 @@ export class ListStarshipsComponent implements OnInit {
   title: string;
   names: never[];
 
-  constructor(private _service: StarShipService) {
+  constructor(private _service: StarShipService, private router: Router) {
     this.title = 'Naves';
     // this.starship = new starship('', '', '', '', '', '');
     this.names = [];
@@ -50,4 +51,7 @@ export class ListStarshipsComponent implements OnInit {
   //   } catch (err) {
   //     console.log(err);
   //   }
+  getStarShip(id: string) {
+    return;
+  }
 }

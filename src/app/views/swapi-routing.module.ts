@@ -36,7 +36,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'list',
+        redirectTo: 'list_starships',
       },
     ],
   },

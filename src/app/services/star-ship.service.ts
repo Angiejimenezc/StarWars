@@ -16,4 +16,7 @@ export class StarShipService {
   getStarShip(): Observable<Result[]> {
     return this.http.get<Result[]>(this.url + this.endPoint);
   }
+  getStarshipsId() {
+    return this.http.get(this.url + 'starships/9');
+  }
 }
