@@ -30,6 +30,15 @@
           </button>
         </td>
       </tr>
+      <!-- <section class="list_starship" infiniteScroll(scrolled)="onScrollDown()"> -->
+      <button
+        class="btn btn-outline"
+        *ngIf="showButton"
+        (click)="onScrollTop()"
+      >
+        More
+      </button>
+      <!-- </section> -->
     </tbody>
   </table>
 </div>

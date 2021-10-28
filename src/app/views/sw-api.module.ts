@@ -9,6 +9,7 @@ import { FilmsComponent } from './films/films.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PlanetsComponent,
     VehiclesComponent,
   ],
-  imports: [CommonModule, SwapiRoutingModule, FontAwesomeModule],
+  imports: [
+    CommonModule,
+    SwapiRoutingModule,
+    InfiniteScrollModule,
+    FontAwesomeModule,
+  ],
 })
 export class SwApiModule {}

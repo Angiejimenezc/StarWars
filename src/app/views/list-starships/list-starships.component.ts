@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Starship } from 'src/app/models/starship';
 import { StarShipService } from 'src/app/services/star-ship.service';
@@ -11,7 +12,14 @@ import { StarShipService } from 'src/app/services/star-ship.service';
 export class ListStarshipsComponent implements OnInit {
   starship: Starship[] = [];
 
-  constructor(private _service: StarShipService, private router: Router) {}
+  showButton = false;
+  private scrollHeight = 400;
+
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private _service: StarShipService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this._service.getStarShip().subscribe(
@@ -28,4 +36,18 @@ export class ListStarshipsComponent implements OnInit {
       }
     );
   }
+
+  @HostListener('window:scroll')
+  onWindowScroll(): void {
+    const yOffSet = window.pageYOffset;
+    const scrollTop = this.document.documentElement.scrollTop;
+    this.showButton = (yOffSet || scrollTop) > this.scrollHeight;
+  }
+
+  onScrollTop(): void {
+    this.document.documentElement.scrollTop = 0;
+  }
+  // onScrollDown(): void {
+  //   console.log('Down');
+  // }
 }
